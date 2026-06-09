@@ -1,0 +1,29 @@
+# Environment & Secrets
+.env
+.env.*
+*.pem
+*.key
+
+# Build artifacts
+target/
+*.o
+*.so
+*.dylib
+
+# Runtime data
+data5m/
+data15m/
+logs/
+cache/
+*.csv
+*.log
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

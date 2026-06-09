@@ -1,0 +1,78 @@
+[package]
+name = "polymarket-hft"
+version = "0.1.0"
+edition = "2021"
+description = "High-frequency Polymarket CLOB v2 algorithmic trading bot in Rust"
+
+[dependencies]
+# ── Async runtime ──
+tokio = { version = "1", features = ["full"] }
+futures = "0.3"
+
+# ── Cryptography & EVM types ──
+alloy-primitives = "0.7"
+alloy-sol-types = "0.7"
+alloy-signer = "0.2"
+alloy-signer-local = "0.2"
+alloy-provider = "0.2"
+alloy-rpc-types = "0.2"
+hex = "0.4"
+hmac = "0.12"
+sha2 = "0.10"
+base64 = "0.22"
+
+# ── JSON ──
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+# ── HTTP/2 pooled client ──
+reqwest = { version = "0.12", default-features = false, features = ["http2", "rustls-tls", "json"] }
+
+# ── WebSocket (Binance) ──
+tokio-tungstenite = { version = "0.21", features = ["native-tls"] }
+
+# ── Synchronization ──
+parking_lot = "0.12"
+arc-swap = "1.7"
+scopeguard = "1"
+
+# ── Lock-free channels ──
+flume = "0.11"
+
+# ── Fast hashing ──
+rustc-hash = "1"
+
+# ── Stack-allocated arrays ──
+arrayvec = { version = "0.7", features = ["serde"] }
+
+# ── HTTP framework (health endpoint) ──
+axum = { version = "0.7", features = ["ws"] }
+tower-http = { version = "0.5", features = ["cors"] }
+
+# ── Logging ──
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "json"] }
+
+# ── Error handling ──
+thiserror = "1"
+
+# ── Config ──
+dotenvy = "0.15"
+
+# ── Numerical ──
+statrs = "0.17"
+itoa = "1"
+
+[dev-dependencies]
+criterion = { version = "0.5", features = ["html_reports"] }
+
+[[bench]]
+name = "hot_path"
+harness = false
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true
