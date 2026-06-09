@@ -4,9 +4,9 @@
 
 [![Rust](https://img.shields.io/badge/Rust-1.78+-000000?style=for-the-badge&logo=rust&logoColor=white)](https://www.rust-lang.org/)
 [![Tokio](https://img.shields.io/badge/Tokio-Async%20Runtime-000000?style=for-the-badge&logo=tokio)](https://tokio.rs/)
-[![License](https://img.shields.io/badge/License-MIT-2ea44f?style=for-the-badge)](LICENSE)
+[![License](https://img.shields.io/badge/License-MIT%20NC-2ea44f?style=for-the-badge)](LICENSE)
 
-[📊 Architecture](#architecture) · [⚡ Performance](#performance) · [🚀 Quick Start](#quick-start) · [📈 Benchmarks](#benchmarks)
+[📊 Architecture](#-architecture) · [⚡ Performance](#-performance) · [🚀 Quick Start](#-quick-start) · [📈 Benchmarks](#-benchmarks)
 
 </div>
 
@@ -278,7 +278,9 @@ This is a personal trading infrastructure project. The public showcase is provid
 
 ## 📜 License
 
-MIT License — see [LICENSE](LICENSE) for details.
+**MIT Non-Commercial License** — see [LICENSE](LICENSE) for full terms.
+
+> ⚠️ **Commercial use is strictly prohibited** without explicit written permission. This software is provided for personal, educational, and non-commercial purposes only.
 
 ---
 
