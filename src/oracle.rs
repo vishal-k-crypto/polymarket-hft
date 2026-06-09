@@ -31,7 +31,7 @@ const LATEST_ROUND_DATA_SELECTOR: [u8; 4] = [0xfe, 0xaf, 0x96, 0x8c];
 // Default RPC fallback list
 const RPC_FALLBACKS: &[&str] = &[
     "https://polygon.drpc.org",
-    "https://rpc.ankr.com/polygon",
+    "https://your-polygon-rpc.com",
     "https://polygon-rpc.com",
     "https://1rpc.io/matic",
 ];
