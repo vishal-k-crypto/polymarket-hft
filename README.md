@@ -20,6 +20,8 @@
 
 ---
 
+<a id="architecture"></a>
+
 ## 🏗️ Architecture
 
 ```
@@ -75,6 +77,8 @@
 
 ---
 
+<a id="performance"></a>
+
 ## ⚡ Performance
 
 ### Compiler Optimizations
@@ -121,6 +125,8 @@ hot_path/price_math         time:   [256 ps 257 ps 259 ps]       thrpt:  [3.87 G
 | Throughput | ~1K orders/sec | ~50K orders/sec |
 
 ---
+
+<a id="quick-start"></a>
 
 ## 🚀 Quick Start
 
@@ -251,6 +257,8 @@ The bot exposes an HTTP dashboard on `:8080` (5-min instance) or `:8888` (15-min
 | **Dust Filtering** | Skip positions below minimum size |
 
 ---
+
+<a id="benchmarks"></a>
 
 ## 📈 Backtesting
 
